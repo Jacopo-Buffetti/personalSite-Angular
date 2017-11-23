@@ -2393,8 +2393,6 @@ BODY .homepage .container-homepage A:after {
   height: 100%;
   width: 100%;
   opacity: 0; }
-BODY .homepage .container-homepage A:hover:after {
-  opacity: 1; }
 BODY .homepage .container-homepage A .title-project {
   position: absolute;
   z-index: 101;
@@ -2407,10 +2405,12 @@ BODY .homepage .container-homepage A .title-project {
   transform: translate(-50%, -50%);
   color: #000000;
   opacity: 0; }
-  BODY .homepage .container-homepage A .title-project:hover {
-    opacity: 1; }
   BODY .homepage .container-homepage A .title-project H3 {
     text-align: center; }
+BODY .homepage .container-homepage A:hover:after {
+  opacity: 1; }
+BODY .homepage .container-homepage A:hover .title-project {
+  opacity: 1; }
 BODY .container-progetto .col-lg-12 {
   padding: 0; }
   @media screen and (max-width: 500px) {
@@ -2446,20 +2446,6 @@ BODY .container-progetto .navigator {
         border-bottom: 2px solid #c4c4c4;
         color: #ffffff;
         font-weight: bold; }
-BODY .title-project {
-  position: absolute;
-  z-index: 101;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  color: #ff0000;
-  opacity: 0; }
-  BODY .title-project:hover {
-    opacity: 1; }
 BODY .sub-navigator UL {
   list-style-type: none;
   margin: 0;

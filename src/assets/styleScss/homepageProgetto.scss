@@ -22,9 +22,7 @@ BODY {
           width: 100%;
           opacity: 0;
         }
-        &:hover:after {
-          opacity: 1;
-        }
+        
         .title-project {
           position: absolute;
           z-index: 101;
@@ -37,11 +35,16 @@ BODY {
           transform: translate(-50%, -50%);
           color: $color1;
           opacity: 0;
-          &:hover {
-            opacity: 1;
-          }
           H3{
             text-align: center;
+          }
+        }
+        &:hover {
+          &:after {
+            opacity: 1;
+          }
+          .title-project {
+            opacity: 1;
           }
         }
       }
@@ -94,23 +97,6 @@ BODY {
           }
         }
       }
-    }
-  }
-
-  .title-project{
-    position: absolute;
-    z-index: 101;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #ff0000;
-    opacity: 0;
-    &:hover{
-      opacity: 1;
     }
   }
   //sub-navigator
