@@ -1,0 +1,17 @@
+*{
+  box-sizing: border-box;
+}
+IMG{
+  max-width: 100%;
+}
+H1,H2,H3,H4,H5,H6,P,A{
+  font-family: 'Ubuntu', sans-serif;
+}
+H1{
+  text-decoration: underline;
+  font-weight: bold;
+  margin: 30px 0 50px 0;
+}
+.container-height{
+  min-height: calc(100vh - 70px);
+}

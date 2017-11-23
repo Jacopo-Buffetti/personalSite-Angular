@@ -1,0 +1,17 @@
+<div class="container homepage container-height">
+  <div class="row">
+    <h1>Progetti</h1>
+  </div>
+  <div class="container-homepage">
+    <div class="row">
+      <div *ngFor="let record of data" class="col-lg-4 col-md-6 col-sm-12">
+        <a routerLink="/progetto/{{record.url}}">
+          <img src="{{record.image}}" alt="{{record.alt1}}">
+          <div class="title-project" >
+            <h3>{{record.title}}</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

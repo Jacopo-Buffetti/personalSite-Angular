@@ -1,0 +1,41 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+$color1: #000000;
+$color2: #c4c4c4;
+$color3: #ffffff;
+
+.btn-primary {
+  background: $color3;
+  color: $color1;
+  border-color: $color1;
+  cursor: pointer;
+  &:hover {
+    background: $color2;
+    color: $color3;
+    border-color: $color2;
+  }
+  &:focus{
+    -webkit-box-shadow: 0 0 0 2px rgba(196,196,196,.5);
+    box-shadow: 0 0 0 2px rgba(196,196,196,.5);
+    color: $color1;
+  }
+  &:active{
+      color: $color3;
+      background-color: $color2;
+      background-image: none;
+      border-color: $color2;
+  }
+}
+::-moz-selection  {
+  background: $color1;
+  color: $color2;
+}
+::selection   {
+  background: $color1;
+  color: $color2;
+}

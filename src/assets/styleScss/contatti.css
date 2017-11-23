@@ -1,0 +1,22 @@
+BODY .contact-row H2 {
+  margin-bottom: 30px;
+  font-weight: bold; }
+BODY .contact-row A {
+  color: #000000;
+  font-size: 1.2em; }
+  BODY .contact-row A:hover {
+    color: #c4c4c4;
+    text-decoration: none; }
+  BODY .contact-row A I {
+    margin-right: 5px; }
+BODY .contact-row .btn-primary {
+  background: #ffffff;
+  color: #000000;
+  border-color: #000000;
+  cursor: pointer; }
+  BODY .contact-row .btn-primary:hover {
+    background: #c4c4c4;
+    color: #ffffff;
+    border-color: #c4c4c4; }
+
+/*# sourceMappingURL=contatti.css.map */

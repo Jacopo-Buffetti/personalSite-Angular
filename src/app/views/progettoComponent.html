@@ -1,0 +1,55 @@
+<div class="container progetti container-height">
+  <h1>{{data.title}}</h1>
+  <div class="container-progetto">
+    <div class="row">
+      <div id="mainContent" class="col-lg-12">
+        <div class="navigator">
+          <ul>
+            <li><a href="#" (click)="tabIndex($event, 1)"
+                   class="{{(totlaBalance===1) ? 'active' : ''}}">PROGETTO
+            </a></li>
+            <li><a href="#" (click)="tabIndex($event, 2)" class="{{(totlaBalance===2) ? 'active' : ''}}">
+              TECNICHE</a></li>
+            <li><a href="#" (click)="tabIndex($event, 3)" class="{{(totlaBalance===3) ? 'active' : ''}}">
+              VIEW</a></li>
+          </ul>
+        </div>
+        <div class="tabBody tabProgetto" [ngSwitch]="totlaBalance">
+          <div *ngSwitchDefault class="row">
+            <div class="col-md-6">
+              <img src="{{data.image}}" alt="{{data.alt1}}">
+            </div>
+            <div class="col-md-6" [innerHTML]="data.description">
+            </div>
+          </div>
+          <div *ngSwitchCase="2" class="row row-experience">
+            <div class="col-md-12">
+              <ul [innerHTML]="data.skills">
+              </ul>
+            </div>
+          </div>
+          <div *ngSwitchCase="3">
+            <div class="sub-navigator">
+              <ul>
+                <li class="col-md-6"><a href="#" (click)="tabIndex2($event, 1)" class="{{(totlaBalance2===1) ? 'active' : ''}}">Desktop </a></li>
+                <li class="col-md-6"><a href="#" (click)="tabIndex2($event, 2)" class="{{(totlaBalance2===2) ? 'active' : ''}}">Mobile</a></li>
+              </ul>
+            </div>
+            <div class="tabBody tabBody2" [ngSwitch]="totlaBalance2">
+              <div *ngSwitchDefault class="row">
+                <div class="col-md-12">
+                  <img src="{{data.image}}" alt="{{data.alt1}}">
+                </div>
+              </div>
+              <div *ngSwitchCase="2" class="row row-experience">
+                <div class="col-md-12">
+                  <img src="{{data.image2}}" alt="{{data.alt2}}">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

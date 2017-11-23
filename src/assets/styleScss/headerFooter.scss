@@ -1,0 +1,155 @@
+@import "user";
+HEADER{
+  .navbar-nav {
+    webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .navbar{
+    background: $color1;
+    UL{
+      align-items: center;
+      LI{
+        IMG{
+          max-width: 120px;
+          @media screen and (max-width: 500px) {
+            max-width: 80px;
+          }
+        }
+        &:nth-child(2){
+          margin-left: 50px;
+          margin-right: 20px;
+          @media screen and (max-width: 500px) {
+            margin-left: 20px;
+            margin-right: 10px;
+          }
+        }
+        &:nth-child(3){
+          margin-right: 10px;
+        }
+        A{
+          color: $color2 !important;
+          font-size: 120%;
+          text-transform: uppercase;
+          @media screen and (max-width: 500px) {
+            font-size: 100%;
+          }
+          &:hover{
+            color: $color1 !important;
+            background: $color2;
+          }
+        }
+        .link-logo{
+          padding: 0 !important;
+        }
+      }
+    }
+  }
+}
+//MODAL FOOTER
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+  opacity: .48;}
+.cdk-overlay-backdrop {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-tap-highlight-color: transparent;
+  transition: opacity .4s cubic-bezier(.25,.8,.25,1);
+  opacity: 0;
+}
+.cdk-overlay-backdrop, .cdk-overlay-pane {
+  position: absolute;
+  pointer-events: auto;
+  z-index: 1000;}
+.cdk-overlay-container {
+  position: fixed;
+  z-index: 1000;
+}
+.cdk-global-overlay-wrapper, .cdk-overlay-container {
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.cdk-overlay-dark-backdrop {
+  background: rgba(0,0,0,.6);
+}
+.cdk-global-overlay-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 1000;
+}
+.cdk-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.mat-dialog-container, .mat-expansion-panel {
+  background: #fff;
+  color: rgba(0, 0, 0, .87);
+}
+.mat-dialog-container{
+  position: relative;
+  .mat-dialog-title{
+    margin: 15px 40px 20px;
+  }
+  .btn{
+    padding: 2px 8px !important;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  A{
+    color: $color1;
+    text-decoration: none;
+    &:hover{
+      color: $color2;
+    }
+  }
+}
+//FOOTER
+
+FOOTER{
+  width: 100%;
+  background: $color1;
+  height: 75px;
+  line-height: 70px;
+  .container{
+    height:70px;
+  }
+  P{
+    display: inline-block;
+    color: $color3;
+    @media screen and (max-width: 500px) {
+      font-size: 14px;
+    }
+  }
+  SPAN{
+    color: $color3;
+  }
+  BUTTON{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    @media screen and (max-width: 500px) {
+      font-size: 15px;
+    }
+    @extend SPAN;
+    &:hover{
+      color: $color2;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{"project":[
+  {
+  "ID":"1",
+  "title":"Aldero Ristorante Pizzeria",
+  "description":"<p>Il sito è stato realizzato in wordpress, così da poter far gestire la parte del blog direttamente al cliente. Sono partito da un tema già comprato e voluto dal cliente. Il sito è responsive e visualizzabile sia da tablet che da smartphone. Nel tema ho creato il modulo per la prenotazione, secondo le specifiche del cliente.</p>",
+  "tasks":"<p>Aldero Ristorante Pizzeria è un locale situato a pochi km da Fabbrica di Roma nella campagna falerina</p>","skills":"<li>Wordpress</li><li>PHP</li><li>SCSS</li><li>jQuery</li>",
+  "link":"http://alderoristorantepizzeria.it",
+  "image":"https://www.jacopobuffetti.com/immagini-sito/alderoristorante.jpg",
+  "url":"alderoristorantepizzeria",
+  "type":"website"
+  }
+,
+  {
+    "ID":"2",
+    "title":"Santa Agency",
+    "description":"<p>Il sito è stato relaizzando in wordpress, ho creato un  tema partendo dalla base del Divi Theme, per poi sviluppare moduli personalizzati sia per il sito desktop che mobile. Il sito su richiesta del cliente prevede un sito desktop e uno mobile.</p>",
+    "tasks":"<p>Santa Agency è un team creativo specializzato in Branding, Web Design e Pubblicita per promuovere compagnie e prodotti</p>",
+    "skills":"<li>Wordpress</li><li>PHP</li>MySQL<li></li><li>SCSS</li><li>jQuery</li>",
+    "link":"http://santa.agency",
+    "image":"https://www.jacopobuffetti.com/immagini-sito/santaAgency.jpg",
+    "url":"santaagency",
+    "type":"website"
+  }
+,
+  {
+    "ID":"3",
+    "title":"Mani Festival",
+    "description":"<p>Ho realizzato il sito con Wordpress, ho usato un tema che aveva come plugin il visual composer. Ho creato vari moduli ad hoc per la creazione di alcuni parte del sito.</p>",
+    "tasks":"<p>Il sito è stato realizzato per l'evento Mani Festival organizzato dall'associazione Superbo. SUPERBO, nasce nel 2016 per realizzare progetti innovativi in Calabria, con l’obiettivo di scuotere la regione e portarla ad avere un giusto flusso turistico/culturale. Questo è stato un progetto di enorme successo a livello nazionale con menzioni e articoli da grandi riviste e magazine quali: sky arte, il sole 24 ore, insideart, ELLE, IL, inserto speciale Provincia Italiana de Il Sole 24 ore e molti altri ancora, riscuotendo enorme partecipazione e generando circa 18.000 visitatori.</p>",
+    "skills":"<li>Wordpress</li><li>Visual Composer - WPBakery</li><li>PHP</li><li>MySQL</li><li>CSS</li><li>jQuery</li>",
+    "link":"http://www.mani-festival.com/",
+    "image":"https://www.jacopobuffetti.com/immagini-sito/mani-festival.jpg",
+    "url":"mani-festival",
+    "type":"website"
+  }
+,
+  {
+    "ID":"4",
+    "title":"Proloco Tempo Libero Vigne",
+    "description":"<p>Il sito è stato realizzando con Wordpress. All'interno ha vari sezioni tra cui una parte dove i giornalisti possono scaricare immagini ad alta risoluzione degli eventi e le cartella stampa. Il sito serve all'associazione per informare i soci sugli eventi e le manifestazioni tenute dall'associazione. Tramite API ho collegato alla homepage del sito la pagina facebook dell'associazone. </p>",
+    "tasks":"<p>La Proloco Tempo Libero Vigne è un'associazione non a scopo di lucro che si occupa di eventi culturali e ricreativi all'interno del comune di Narni in provincia di Terni. L'attività dei soci e dei consiglieri è atta solo ad una riqualifica e ampliamento dell'offerta culturale del comune di Narni</p>",
+    "skills":"<li>Wordpress</li><li>Visual Composer - WPBakery</li><li>PHP</li><li>MySQL</li><li>CSS</li><li>jQuery</li>",
+    "link":"http://santa.design/",
+    "image":"https://www.jacopobuffetti.com/immagini-sito/prolocotempoliberovigne.jpg",
+    "url":"santa-design-studio",
+    "type":"website"
+  }
+,
+  {
+    "ID":"5",
+    "title":"Checksan",
+    "description":"<p>Il sito è stato sviluppando in Wordpress usando il visual composer WPBakery e creando moduli e sezioni ad hoc a seconda delle esigenze del cliente. Il sito è in doppia lingua (italiano e inglese), per farlo mi sono avvalso di un plugin</p>",
+    "tasks":"<p>Checksan è una azienda specializzata in macchinari per il controllo qualità di qualità sulla produzione di sanitari</p>",
+    "skills":"<li>Wordpress</li>Visual Composer - WPBakery<li>PHP</li><li>PHP</li><li>MySQL</li><li>CSS</li><li>jQuery</li>",
+    "link":"http://www.checksan.com/checksan-nuovo",
+    "image":"https://www.jacopobuffetti.com/immagini-sito/checksan.jpg",
+    "url":"checksan",
+    "type":"website"
+  }
+]}

@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header>
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <div id="navbarSupportedContent" class="container">
+    <ul class="navbar-nav mr-auto container">
+      <li class="nav-item active"><a routerLink="/" routerLinkActive="active" class="nav-link link-logo"><img src="https://www.jacopobuffetti.com/immagini-sito/logo.jpg" alt="Logo"/></a></li>
+      <li class="nav-item active"><a routerLink="/" routerLinkActive="active" class="nav-link">Progetti</a></li>
+      <li class="nav-item active"><a routerLink="/about" routerLinkActive="active" class="nav-link">About</a></li>
+      <li class="nav-item active"><a routerLink="/contatti" routerLinkActive="active" class="nav-link">Contatti</a></li>
+    </ul>
+    </div>
+  </nav>
+</header>
+<router-outlet></router-outlet>
+<footer>
+  <div class="container">
+    <p>© 2017 | Jacopo Buffetti</p> <span>|</span><button mat-button (click)="openDialog()">Clicca per Contattarmi </button>
+  </div>
+</footer>
+

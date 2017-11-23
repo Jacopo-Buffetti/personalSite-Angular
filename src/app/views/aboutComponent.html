@@ -1,0 +1,56 @@
+<div class="container about container-about container-height">
+  <h1>About</h1>
+    <div class="row">
+      <div id="mainContent" class="col-lg-12">
+        <div class="navigator">
+          <ul>
+            <li><a href="#" (click)="tabIndex($event, 1)" class="{{(totlaBalance===1) ? 'active' : ''}}">PROFILO
+            </a></li>
+            <li><a href="#" (click)="tabIndex($event, 2)" class="{{(totlaBalance===2) ? 'active' : ''}}">
+              CONOSCENZE</a></li>
+            <li><a href="#" (click)="tabIndex($event, 3)" class="{{(totlaBalance===3) ? 'active' : ''}}">
+              ESPERIENZE</a></li>
+          </ul>
+        </div>
+        <div class="tabBody tabAbout" [ngSwitch]="totlaBalance">
+          <div *ngSwitchDefault class="row">
+            <div class="col-md-6">
+              <img src="https://www.jacopobuffetti.com/immagini-sito/immagine-profilo.jpg" alt="Immagine Profilo">
+            </div>
+            <div class="col-md-6">
+              <p>
+                Sono nato a Perugia il 23 dicembre 1982. Dopo essermi laureato in Scienze Politiche a Roma, due anni fa mi sono avvicinato al mondo del web e allo sviluppo di siti internet. Ho intrapreso la carriera lavorativa come front-end Developer grazie al corso che ho seguito presso la scuola LabForTraining a Roma: qui ho preso manualità con i linguaggi di programmazione web più comuni (sono partito dal corso HTML5 e CSS3 base fino ad arrivare allo stack MEAN).
+                Dopo il corso ho avuto la possibilità di lavorare ad alcuni progetti, soprattutto con il CMS Wordpress in cui ho potuto mettere in pratica molte delle capacità acquisite. Adoro imparare cose nuove e accrescere le mie competenze, mi piace lavorare in team per potermi confrontare e crescere sia umanamente che professionalmente.
+              </p>
+              <a class="btn btn-primary btn-block btn-curriculum" href="https://www.jacopobuffetti.com/file/curriculumVitae.pdf" target="_blank">Scarica il mio Curriculum</a>
+            </div>
+          </div>
+          <div *ngSwitchCase="2" class="row row-experience">
+            <div class="col-md-5">
+              <ul >
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>Wordpress</li>
+                <li>Responsive Web Design</li>
+                <li>HTML Email</li>
+                <li>SEO</li>
+                <li>PHP Base e MYSQL</li>
+                <li>SASS/SCSS</li>
+                <li>Angular</li>
+                <li>Stack MEAN (Mongo, Express, Angular, Node)</li>
+              </ul>
+            </div>
+            <div class="col-md-7">
+              <img src="https://www.jacopobuffetti.com/immagini-sito/conoscenze.png" alt="Immagine Conoscenze">
+            </div>
+          </div>
+          <p *ngSwitchCase="3">Ho realizzato sia siti web statici che dinamici per piccole, medie imprese e
+            privati. Ho creato siti vetrina, con tecnologie responsive adattabile anche sui dispositivi mobili e tablet, tutto questo sopratutto grazie all’utilizzo di CMS (sistema di gestione dei contenuti) come WordPress, per permettere ai miei clienti di potersi aggiornare il proprio sito in completa autonomia, creando moduli dinamici per
+            l'inserimento di contenuti secondo le specifiche del cliente.</p>
+        </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+@import "user";
+BODY{
+  .container-about {
+    overflow-x: hidden;
+    .col-lg-12{
+      padding: 0;
+    }
+    .navigator {
+      padding-left: 0.5em;
+      UL {
+        padding-left: 0;
+        font-size: 0;
+        LI {
+          display: inline-block;
+          list-style: none;
+          cursor: pointer;
+          width: 33%;
+          text-align: center;
+          font-size: 1em;
+          A {
+            border-bottom: 2px solid $color1;
+            width: 100%;
+            cursor: pointer;
+            display: block;
+            font-size: 16px;
+            color: $color1;
+            text-decoration: none;
+            &:hover {
+              background-color: $color2;
+              color: $color3;
+            }
+          }
+          .active {
+            background-color: $color2;
+            border-bottom: 2px solid $color2;
+            color: $color3;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .tabAbout {
+    P {
+      @media screen and (max-width: 500px) {
+        margin-top: 30px;
+      }
+    }
+  }
+  .tabBody {
+    text-align: justify;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    IMG {
+      width: 100%;
+    }
+    P {
+      font-size: 1.1em;
+    }
+    .row-experience {
+      UL {
+        LI {
+          font-size: 1.4em;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .btn-curriculum{
+      @media screen and (max-width: 500px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+

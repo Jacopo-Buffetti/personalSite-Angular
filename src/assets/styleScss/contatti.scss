@@ -1,0 +1,32 @@
+@import "user";
+BODY {
+  .contact-row {
+    H2 {
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+    A {
+      color: $color1;
+      font-size: 1.2em;
+      &:hover {
+        color: $color2;
+        text-decoration: none;
+      }
+      I {
+        margin-right: 5px;
+      }
+    }
+    FORM{
+      H2{
+        @media screen and (max-width: 500px) {
+          margin-top: 40px;
+        }
+      }
+      BUTTON{
+        @media screen and (max-width: 500px) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
